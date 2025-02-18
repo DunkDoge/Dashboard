@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    margin-left: 20rem;
+    margin-left: 21rem;
     padding: 1rem;
 }
 
@@ -18,14 +18,37 @@ main {
     width: 20rem;
     height: 100vh;
     position: fixed;
-    background-color: rgb(78, 119, 255);
+    background-color: rgb(53, 153, 219);
+    color: white;
     font-size: 20px;
     display: grid;
+    padding: 1rem;
     grid-template-rows: auto auto 1fr;
+    gap: 3rem;
 }
 
-#sidebar svg {
-    width: 50px;
-    height: 50px;
+#sidebar svg, img {
+    max-width: 35px;
+    max-height: 35px;
     filter: invert(100%);
+}
+#sidebar .logo svg {
+    max-height: 60px;
+    max-width: 60px;
+ }
+
+#sidebar ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
 }
