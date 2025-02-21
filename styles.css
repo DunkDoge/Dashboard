@@ -9,13 +9,13 @@ body {
     font-family: "Roboto", serif;
 }
 
-main {
+main, header {
     margin-left: 21rem;
     padding: 1rem;
 }
 
 #sidebar {
-    width: 20rem;
+    width: 19rem;
     height: 100vh;
     position: fixed;
     background-color: rgb(53, 153, 219);
@@ -27,7 +27,7 @@ main {
     gap: 3rem;
 }
 
-#sidebar svg, img {
+#sidebar svg, #sidebar img {
     max-width: 35px;
     max-height: 35px;
     filter: invert(100%);
@@ -46,9 +46,38 @@ main {
     cursor: pointer;
 }
 
+#sidebar p:hover {
+    text-decoration: underline;
+}
+
 .logo {
     display: flex;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+}
+
+
+/* HEADER */
+
+header {
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 90%;
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgb(245, 238, 238);
+    padding: 0.7rem;
+}
+
+.search-bar img {
+    max-height: 2rem;
 }
