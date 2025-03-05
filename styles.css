@@ -27,6 +27,10 @@ main, header {
     gap: 3rem;
 }
 
+#sidebar li:hover {
+    background-color: rgb(40, 120, 173);;
+}
+
 #sidebar svg, #sidebar img {
     max-width: 35px;
     max-height: 35px;
